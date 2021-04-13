@@ -26,12 +26,12 @@ export class SubmissionService {
     const formData: FormData = new FormData();
     formData.append('file', file, file.name);
     formData.append('user', user);
-    return this.http.post<any>('submission/document', formData, { observe : 'response' });
+    return this.http.post<any>('submission/uploaddocument', formData, { observe : 'response' });
   }
   uploadreleaseimage(file : File): Observable<HttpResponse<any>>{
     const formData: FormData = new FormData();
     formData.append('file', file, file.name);
-    return this.http.post<any>('submission/uploaddocument', formData, { observe : 'response' });
+    return this.http.post<any>('submission/uploadimage', formData, { observe : 'response' });
   }
   getfile(id): Observable<HttpResponse<any>>{
     return this.http.get<any>('submission/file/' + id, { observe : 'response' });

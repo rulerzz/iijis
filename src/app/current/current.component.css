@@ -1,5 +1,5 @@
 li{
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 2px;
 }
 main > h1{
@@ -14,11 +14,18 @@ img{
   max-height: 540px;
 }
 .interviewee img{
-max-width: 160px;
+max-width: 260px;
 border: 10px solid gray;
 
 }
 .interviewee{
   margin-top:80px;
   margin-bottom: 20px;
+}
+.sj-bannercontent h1 {
+  font-size: 52px !important;
+  margin: 0 0 32px !important;
+  padding: 0 0 22px !important;
+  line-height: 62px !important;
+  position: relative !important;
 }

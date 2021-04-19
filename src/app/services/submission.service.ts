@@ -48,10 +48,11 @@ export class SubmissionService {
   getlist(id): Observable<HttpResponse<any>>{
     return this.http.get<any>('submission/listall/' + id , { observe : 'response'});
   }
-  createRelease(title, description, file : File, interviewee, submissions){
+  createRelease(title, description, intervieweename, file : File, interviewee, submissions){
     const formData: FormData = new FormData();
     formData.append('file', file, file.name);
     formData.append('title', title);
+    formData.append('intervieweename', intervieweename);
     formData.append('description', description);
     formData.append('interviewee', JSON.stringify(interviewee));
     formData.append('submissions', JSON.stringify(submissions));

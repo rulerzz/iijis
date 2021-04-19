@@ -41,6 +41,7 @@ export class ReleasesComponent implements OnInit {
       this.releaseForm = this.fb.group({
         title: new FormControl('', [Validators.required]),
         description: new FormControl('', [Validators.required]),
+        intervieweename: new FormControl('', [Validators.required]),
       });
   }
 
@@ -112,6 +113,8 @@ export class ReleasesComponent implements OnInit {
       this.toastr.error('Title cannot be empty!', 'Validation Error!');
     } else if(this.releaseForm.controls['description'].invalid){
       this.toastr.error('Description cannot be empty!', 'Validation Error!');
+    } else if(this.releaseForm.controls['intervieweename'].invalid){
+      this.toastr.error('Interviewee name cannot be empty!', 'Validation Error!');
     } else if(this.file === null || this.file === undefined){
       this.toastr.error('File cannot be empty!', 'Validation Error!');
     } else {
@@ -119,6 +122,7 @@ export class ReleasesComponent implements OnInit {
       this.submissionService.createRelease(
         this.releaseForm.controls['title'].value,
         this.releaseForm.controls['description'].value,
+        this.releaseForm.controls['intervieweename'].value,
         this.file,
         this.interviewee,
         this.submissions).subscribe((data)=>{

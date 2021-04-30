@@ -56,7 +56,7 @@ border: 5px solid gray;
 }
 .journal-header__title{
   position: relative;
-  color: #000;  
+  color: #636c77;  
   font-family: 'Helvetica Neue';
   font-size: 3rem;
   line-height: 0.9;
@@ -136,19 +136,17 @@ border: 5px solid gray;
   margin: 40px 0;
 }
 .accordion .item {
-    -webkit-box-shadow:  10px 20px  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow:  10px 20px   rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 10px 20px  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 6px 9px 2px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     margin-bottom: 50px;
     background: none;
 }
 .t-p{
-  color: #000;
+  color: #636c77;
   padding: 20px 30px 30px 30px;
 }
 .accordion .item .item-header h2 button.btn.btn-link {
     background: #fff;
-    color: #000;
+    color: #636c77;
     border-radius: 0px;
     font-family: 'Helvetica Neue';
     font-size: 1.1em;
@@ -175,7 +173,7 @@ border: 5px solid gray;
 .accordion .item .item-header h2 i {
     float: right;
     font-size: 30px;
-    color: #000;
+    color: #636c77;
     background-color: #fff;
     width: 60px;
     height: 40px;
